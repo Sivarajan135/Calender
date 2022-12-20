@@ -46,7 +46,7 @@ const renderCalendar = () => {
 
   if(date.getMonth() === new Date().getMonth())
   {
-  document.querySelector(".date p").innerHTML = new Date().toDateString();
+  document.querySelector(".date p").innerHTML = date.toDateString();
   }
   else
   {
