@@ -109,3 +109,45 @@
   .today {
     background: linear-gradient(to bottom right, #cc0066 0%, #000066 100%);
   }
+
+
+  /* Media query */
+
+  @media (max-width : 450px)
+  {
+      .calendar
+      {
+        width: 90%;
+        height: 45rem;
+      }
+      .month {
+        width: 100%;
+        height: 8rem;
+        background: linear-gradient(to bottom right, #cc0066 0%, #000066 100%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+        text-align: center;
+        text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+      }
+      .month i {
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .month h1 {
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        margin-bottom: 0.5rem;
+      }
+      .month p {
+        font-size: 1.2rem;
+      }
+      .days div {
+        font-size: 1.2rem;
+        margin: 0.2rem;
+        width: calc(32.4rem / 7);
+      }  
+  }
